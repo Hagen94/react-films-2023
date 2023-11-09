@@ -5,10 +5,11 @@ import Home_views from "../features/home/views/home_views";
 
 export const appRouter = createBrowserRouter([
     {path: "/",
-    Component: Home_views,
+    element: <Home_views/>,
+    
 
 },
     {path:"/login",
-    Component: Login_views,
+    element: <Login_views/>,
 },
 ])
