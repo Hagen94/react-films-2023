@@ -1,0 +1,63 @@
+
+.header{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    background-color:#000;
+    position: sticky;
+    top:0;
+    z-index:10;
+}
+.primerSection{
+    display:flex; 
+    flex-direction:row;
+    width:60%;
+}
+
+.contenedorLogo{
+    position:relative;
+    left:3rem; 
+}
+.logo>img{
+    width:7.5rem;
+    height:5rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.segundaSection{
+    display:flex;
+    flex-direction:row;
+    width:40%;
+    justify-content:flex-end; 
+    align-items:center;
+    gap:2rem
+}
+
+
+
+
+
+
+.inputLupa{
+    position: relative;
+    background-color:black;
+    color:white;
+    width:21rem;
+    text-align:center;
+    padding:0.5rem;
+    border: white 0.1rem solid;
+    
+    
+}
+
+
+.lupa:hover{
+    position:absolute;
+    left:0;
+    top:0;
+    padding:0.4rem;
+
+}

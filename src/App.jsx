@@ -3,8 +3,6 @@ import { appRouter } from './core/routes/app-router'
 import Root_provider from './core/providers/root_provider'
 // import function to register Swiper custom elements
 import { register as registerswiper } from 'swiper/element/bundle';
-import { useEffect } from 'react';
-import axios from 'axios';
 const App = () => {
 
 

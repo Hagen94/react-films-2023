@@ -1,0 +1,42 @@
+
+.formLogin{
+    background-color: rgba(0,0,0,.75);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent);
+    border-radius: 4px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0 5%;
+    height: 85vh;   
+    
+}
+.formLogin >h1{
+    font-size: 3.2em;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+.suscription{
+    color: #737373;
+} 
+.suscribite{
+font-size: 1.6em;
+margin-bottom: 1rem;
+}
+.suscribite a{
+    color: #fff;
+}
+
+.suscription p, .suscription span{
+    font-size:1.3em ;
+}
+
+.politicaCondiciones{
+    color: #0080ff;
+}
+.politicaCondiciones:hover{
+    text-decoration: underline;
+}
