@@ -6,3 +6,8 @@
 
 - https://vitejs.dev/guide/env-and-mode.html
 
+-https://fontawesome.com/docs/web/use-with/react/
+
+ -https://mui.com/material-ui/getting-started/installation/
+
+
