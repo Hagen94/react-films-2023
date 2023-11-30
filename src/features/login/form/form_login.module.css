@@ -1,0 +1,64 @@
+
+.form{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+
+}
+.usuarioContraseña{
+    display: flex;
+    position: relative;
+}
+.usuarioContraseña>label{
+    font-size: 1.1em;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    padding: 5px;
+    color: black;
+    padding-left: 5%;
+    
+}
+
+.usuarioContraseña>input{
+    font-size: 1.6em;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding-bottom: 1.6rem;
+    background-color: white;
+
+}
+
+.inicioSesionBoton>button{
+    border: none;
+    font-family: 'Netflix Sans';
+    font-size: 1.6em;
+    line-height: 1.6rem;
+    font-weight: 500;
+    width: 100%;
+    background-color: #E50914;
+    color: #fff;
+    margin: 1.4rem 0 1.2rem;
+    padding: 1rem;
+    
+}
+
+.recordarDatos{
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    color: #b3b3b3;
+    font-size: 1.3em;
+    margin-bottom:3rem ;
+}
+
+.recordarDatos a{
+    color: #b3b3b3;
+}
+.recordarDatos a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,47 @@
+
+.buttonCampana{
+   background-image: "black";     
+}
+
+.contenedor-home{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.sectionLink{
+display: flex;
+width: 50%;
+}
+
+
+.sectionLink>ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    font-size: 1.4em;
+    line-height: 1.7rem;
+    font-weight: 400;
+    gap: 2rem;
+    padding-left: 10%;
+}
+.sectionLink>ul>li:hover{
+    color: #b3b3b3;
+}
+
+/*cambiar color del swipper */
+
+swiper-container::part(button-prev), 
+swiper-container::part(button-next){
+color: white;
+}  
+
+
+
