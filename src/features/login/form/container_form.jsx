@@ -19,12 +19,12 @@ const Container_form = () => {
         e.preventDefault()
   
         setIsLoading(true)
-        //controlamos el error
+      
         try {
-          /*tomamos los valores del name y se lo pasamos al envento logIn */
-        const form = e.target;// dentro del evento entramos a la clave target que contiene el formilario
-        const formData = new FormData(form) //convertimos el formulario en un  FormData
-        const {email, password} = Object.fromEntries(formData) //entramos y sacamos los valores con el name
+         
+        const form = e.target;
+        const formData = new FormData(form) 
+        const {email, password} = Object.fromEntries(formData) 
         form.reset()
         await logIn(email, password) 
       

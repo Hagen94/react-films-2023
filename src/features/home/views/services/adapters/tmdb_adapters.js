@@ -1,6 +1,5 @@
 import { tmdb_paths } from "../datasources/remote/tmdb/tmdb_api"
 
-//adaptador que recibe la respuesta de la api
 export const tdmbMoviesTvAdapter = (response) =>{
     const {results} = response
 

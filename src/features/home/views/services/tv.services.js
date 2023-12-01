@@ -6,7 +6,6 @@ import { mtdb, tmdb_paths } from "./datasources/remote/tmdb/tmdb_api"
 
 
 export const getPopularTv = async () =>{
-                    //baseurl       //endpoint
  const {data} = await mtdb.get(tmdb_paths.tv.popular,options)
  return tdmbMoviesTvAdapter(data) //le pasamos los datos al adaptador
 }
@@ -18,7 +17,6 @@ export const getTopRatedTv = async () => {
   
   export const getUpcomingTv = async () => {
     const { data } = await mtdb.get(tmdb_paths.tv.airing_today, options);
-  
     return tdmbMoviesTvAdapter(data);
   };
 

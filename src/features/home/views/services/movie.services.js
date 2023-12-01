@@ -4,18 +4,11 @@ import { mtdb, tmdb_paths } from "./datasources/remote/tmdb/tmdb_api"
 
 
 export const getPopularMovies = async () =>{
-                    //baseurl       //endpoint
+                  
  const {data} = await mtdb.get(tmdb_paths.movies.popular,options)
 
- return tdmbMoviesTvAdapter(data) //le pasamos los datos al adaptador
+ return tdmbMoviesTvAdapter(data) 
 }
-export const getPopularMovie = async () =>{
-
-const {data} = await mtdb.get(tmdb_paths.movies.popular,options)
-
-return data //le pasamos los datos al adaptador
-}
-
 export const getTopRatedMovies = async () => {
     const { data } = await mtdb.get(tmdb_paths.movies.top_rated, options);
     
@@ -30,12 +23,7 @@ export const getTopRatedMovies = async () => {
     return tdmbMoviesTvAdapter(data);
   };
 
-  export const getMovieID = async () => {
-    const { data } = await mtdb.get(tmdb_paths.movies.id + 1075794, options);
-  console.log(data)
-    return tdmbMoviesTvAdapter(data);
-  };
-
+  
   const options = {
     method: 'GET',
     headers: {

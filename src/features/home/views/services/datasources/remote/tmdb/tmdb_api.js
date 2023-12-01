@@ -52,10 +52,3 @@ export const tmdb_paths = {
       },
     },
   };
-
-//paquete para trailers
-
-/**
- * react-youtube
- *elprofesor nos va a avisar bien
- */
