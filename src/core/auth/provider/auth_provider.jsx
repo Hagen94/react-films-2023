@@ -47,7 +47,6 @@ useEffect( () => {
 
     mtdb.interceptors.response.use(
         (response) =>{
-            console.log("ENDPOINT:", response.config.baseURL)
             return response
         }, 
        

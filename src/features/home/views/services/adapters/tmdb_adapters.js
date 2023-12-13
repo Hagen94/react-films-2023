@@ -12,9 +12,6 @@ export const tdmbMoviesTvAdapter = (response) =>{
             description: item.overview,
             rating: item.vote_average,
             video: item.video,
-          
-
-
         }
     ))
 }

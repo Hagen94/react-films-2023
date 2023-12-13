@@ -9,8 +9,9 @@ import { getPopularTv, getTopRatedTv,  getUpcomingTv } from "./services/tv.servi
 
 
 
-export const Home_views = () => {
 
+export const Home_views = () => {
+  
 const {
   data:popularMovies,
   error: errorPopularMovies,
@@ -37,16 +38,18 @@ isLoading: isLoadingUpcomingTv} = useSWR('getUpcomingTv', getUpcomingTv);
 
 
   return (
+  
    
       <div className={styles.contenedorHome}>
         <HeaderHome  data={popularMovies}  />
+       
         <AppCarrusel data={popularMovies} title={"Peliculas mejor puntuadas"}></AppCarrusel>
         <AppCarrusel data={topRatedMovies} title={"Peliculas mejor calificadas"}></AppCarrusel>
         <AppCarrusel data={upComingMovies} title={"Peliculas proximamente"}></AppCarrusel>
         <AppCarrusel data={popularTv} title={"Tv mejor puntuadas"}></AppCarrusel>
         <AppCarrusel data={topRatedTv} title={"Tv mejor calificadas"}></AppCarrusel>
         <AppCarrusel data={upComingTv} title={"Tv proximamente"}></AppCarrusel>
-        
+       
       </div>
 
   );

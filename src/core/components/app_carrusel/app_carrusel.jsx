@@ -4,7 +4,12 @@ import { MyComponent } from '../app_swiper/app_swiper';
 import AppTitle from '../app_title/app_title';
 import AppCard from '../app_card/app_card';
 import styles from "./carrusel.style.module.css"
-const AppCarrusel = ({data, title }) => {
+const AppCarrusel = ({data, title, selectMovie }) => {
+  
+  const enviarMovie= (elemento)=>{
+ selectMovie(elemento)
+ 
+  }
   
   return (
     <div className={styles.container}>
@@ -13,8 +18,10 @@ const AppCarrusel = ({data, title }) => {
           {data?.map((element) => {
             
             return (
-              <AppSwipperSlide key={element.id} classname={styles.card}>
-        <AppCard config={{
+            <AppSwipperSlide key={element.id} classname={styles.card}  onClick={() => enviarMovie(element)}>
+        <AppCard 
+        
+        config={{
           image:{
             show:true,
             url: `${element.poster}`, 

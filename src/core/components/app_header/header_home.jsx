@@ -9,35 +9,7 @@ import styles from './header.style.module.css';
 import AlignItemsList from '../app_estrenos/app_estrenos';
 
 
-const HeaderHome = ({data, buscar}) => {
-
-  const arreglo = buscar
-  /*Tomamos el valor del input */
-  
-
- 
-
-   const handleFind = (e) => {
-    /*const busqueda = new RegExp(e.target.value, 'i') */
-
-/*
-    arreglo.map((element) => {
-      element.map((item)=>{
-        if(busqueda.test(item.title)){
-           const peliculas = item
-          for(const [key, value] of Object.entries(peliculas)){
-            console.log(`${key}: ${value}`);
-            window.location.href = urlCompleta
-          }
-        }
-      })
-    })
-      */
-     
-    }
-
-
-
+const HeaderHome = ({data}) => { 
 
   return (
     <header className={styles.header} >
@@ -51,12 +23,9 @@ const HeaderHome = ({data, buscar}) => {
           <Navbar className={styles.navbar}/>
         </section>
         <section className={styles.segundaSection}>
-        
-          <AppLink style={{position:"relative"}}>
-              <input type='text' placeholder='Titulos, personas, generos' className={styles.inputLupa} onChange={handleFind}  />
-              <FontAwesomeIcon icon={faMagnifyingGlass} size='2x' className={styles.lupa} style={{color: "#f7f7f7"}} />
+          <AppLink style={{position:"relative"}} to={"/searchMovie"}>
+              <FontAwesomeIcon icon={faMagnifyingGlass} size='2x' className={styles.lupa}  style={{color:"white"}}/>
           </AppLink>
-       
         <AppLink>
           <AlignItemsList data={data}/>
         </AppLink>

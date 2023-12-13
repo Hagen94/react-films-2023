@@ -33,21 +33,19 @@ export default function AlignItemsList({data}) {
         
     </ListItemButton>
     <Menu 
-     id="basic-menu"
+        id="basic-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
         MenuListProps={{
           'aria-labelledby': 'basic-button',
-        
         }}>
     
     <List sx={{ width: '100%', maxWidth:" 30rem", }}>
-     
         {
-            data?.map((element)=>(
-                <>
-                 <ListItem alignItems="flex-start" className={styles.listItem} key={element.id}>
+        data?.map((element)=>(
+            <>
+                <ListItem alignItems="flex-start" className={styles.listItem} key={element.id}>
                 <ListItemAvatar>
                 <Avatar alt="imagen de una pelicula" src={element.poster} />
                 </ListItemAvatar>
@@ -66,13 +64,12 @@ export default function AlignItemsList({data}) {
                 component="h4"
                 variant="body3"
                 color="white">{element.lanzamiento}</Typography>
-             
                 </React.Fragment>
                 }/>
                 
-             </ListItem>
-            <Divider variant="fullWidth" component="li" />
-                </>
+              </ListItem>
+               <Divider variant="fullWidth" component="li" />
+            </>
                 
             
 

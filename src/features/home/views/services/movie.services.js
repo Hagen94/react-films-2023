@@ -15,8 +15,6 @@ export const getTopRatedMovies = async () => {
     return tdmbMoviesTvAdapter(data);
   };
 
-  
-  
   export const getUpcomingMovies = async () => {
     const { data } = await mtdb.get(tmdb_paths.movies.upcoming, options);
   
